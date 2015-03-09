@@ -1,0 +1,87 @@
+@import "reset";
+@import "library";
+
+/* GENERAL */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 21px;
+    background: lightgrey;
+}
+
+a {
+    color: #800000;
+}
+
+p {
+    margin-bottom: 1.1em;
+}
+
+section, nav {
+    padding: 2.5%;
+    border: 1px solid blue;
+}
+
+/* SPECIFIC */
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    background: white;
+}
+
+.content {
+    padding: 20px 0;
+    // font-size: 0;
+
+    .main {
+        margin-right: 5%;
+        font-size: 1rem;
+    }
+}
+
+ul {
+    text-align: center;
+}
+
+.hero {
+    text-align: center;
+    .amp {
+
+    }
+    .subhead {
+        display: block;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+// FORM
+input[type="text"], textarea {
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
