@@ -17,7 +17,7 @@ WritingScript:Roman
 OutlineFileName:\JosefinSans-Bold.ttf
 DataFormat:sfntData
 FileLength:32912
-FileModTime:1426628774
+FileModTime:1373449992
 %EndFont
 
 %BeginFont
@@ -36,7 +36,7 @@ WritingScript:Roman
 OutlineFileName:\JosefinSans-Regular.ttf
 DataFormat:sfntData
 FileLength:33008
-FileModTime:1426628774
+FileModTime:1373449992
 %EndFont
 
 %BeginFont
@@ -55,7 +55,7 @@ WritingScript:Roman
 OutlineFileName:\JosefinSans-SemiBold.ttf
 DataFormat:sfntData
 FileLength:33004
-FileModTime:1426628774
+FileModTime:1373449992
 %EndFont
 
 %BeginFont
@@ -76,6 +76,6 @@ DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
 FileLength:49488
-FileModTime:1426628774
+FileModTime:1370359134
 %EndFont
 

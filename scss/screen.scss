@@ -63,12 +63,18 @@ header, .when, .registry, .stay, .rsvp, button, {
         color: white;
         text-decoration: none;
         padding-bottom: 3px;
-        border-bottom: 3px solid white;
+        // border-bottom: 3px solid white;
     }
 }
 
 header, .when, .registry, .stay, button, {
     background: $salmon;
+}
+
+.when, .registry {
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
 }
 
 .stay, .rsvp {
@@ -292,6 +298,9 @@ button {
 		background-color: rgba(0,0,0,0.5);
 		max-width: 840px;
 		margin: auto;
+		// -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+		// -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
+		// box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
 	}
 	
 	.rsvp-hero {
