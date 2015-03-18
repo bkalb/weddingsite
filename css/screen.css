@@ -114,9 +114,9 @@ header, .when, .registry, .stay, button {
     letter-spacing: 0; }
   .hero .wrap {
     position: absolute;
-    top: 60%;
-    right: 50%;
-    margin-right: -152px; }
+    right: 0;
+    left: 0;
+    bottom: 3em; }
 
 .get-there {
   background: #2DFFFE; }
@@ -183,23 +183,17 @@ button {
   .hero {
     height: 290px; }
     .hero h1 {
-      font-size: 2.7rem; }
-    .hero .wrap {
-      margin-right: -171px; } }
+      font-size: 2.7rem; } }
 @media screen and (min-width: 450px) {
   .hero {
     height: 350px; }
     .hero h1 {
-      font-size: 3.25rem; }
-    .hero .wrap {
-      margin-right: -206px; } }
+      font-size: 3.25rem; } }
 @media screen and (min-width: 525px) {
   .hero {
     height: 375px; }
     .hero h1 {
       font-size: 3.75rem; }
-    .hero .wrap {
-      margin-right: -222px; }
 
   .when .wrap {
     max-width: 600px;
@@ -209,8 +203,6 @@ button {
     height: 410px; }
     .hero h1 {
       font-size: 4.5rem; }
-    .hero .wrap {
-      margin-right: -285px; }
 
   ul {
     width: 500px;
@@ -260,7 +252,7 @@ button {
     .hero h1 {
       font-size: 5rem; }
     .hero .wrap {
-      margin-right: -316.5px; }
+      margin-top: 20%; }
 
   .rsvp {
     background-color: rgba(0, 0, 0, 0.5);
@@ -268,6 +260,7 @@ button {
     margin: auto; }
 
   .rsvp-hero {
+    background-color: #281624;
     height: 1100px; }
 
   button {

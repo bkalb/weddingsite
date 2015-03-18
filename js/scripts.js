@@ -1,0 +1,3 @@
+$(function() {
+	$("#responsive-headline").fitText();
+});
