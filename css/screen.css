@@ -68,7 +68,7 @@ small {
   font-size: 0.75em; }
 
 section, header {
-  padding: 1.25em; }
+  padding: 1.5em; }
 
 ul {
   text-align: center;
@@ -152,7 +152,8 @@ iframe {
   display: block;
   margin: .5rem auto 1rem;
   height: 360px;
-  width: 100%; }
+  width: 100%;
+  border: 3px solid white; }
 
 fieldset {
   margin: 1rem 0; }
@@ -223,17 +224,6 @@ button {
     width: 500px;
     margin: auto; }
 
-  .directions, iframe {
-    display: inline-block; }
-
-  iframe {
-    width: 37%;
-    height: 500px;
-    vertical-align: top; }
-
-  .directions {
-    width: 62%; }
-
   button {
     max-width: 560px;
     padding: 1rem;
@@ -262,6 +252,18 @@ button {
   header {
     display: table;
     width: 100%; }
+
+  .directions, iframe {
+    display: inline-block; }
+
+  iframe {
+    width: 37%;
+    height: 500px;
+    vertical-align: top; }
+
+  .directions {
+    width: 62%;
+    padding: 1% 0 0 3%; }
 
   .show-mobile {
     display: none; }
