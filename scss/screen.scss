@@ -195,7 +195,7 @@ button {
 	}
 }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 480px) {
 	.hero {
 		h1 {
 			font-size: 3.75rem;
@@ -211,7 +211,7 @@ button {
 	}
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
 
 	.hero {
 		h1 {
@@ -250,7 +250,7 @@ button {
 	}
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 	.wrap {
 		max-width: 960px;
 		margin: auto;
@@ -303,7 +303,7 @@ button {
 	}
 
 	button {
-		margin-bottom: -45px;
+		margin-bottom: -43px;
 	}
 }
 

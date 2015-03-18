@@ -189,7 +189,7 @@ button {
     height: 350px; }
     .hero h1 {
       font-size: 3.25rem; } }
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 480px) {
   .hero {
     height: 375px; }
     .hero h1 {
@@ -198,7 +198,7 @@ button {
   .when .wrap {
     max-width: 600px;
     margin: auto; } }
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 600px) {
   .hero {
     height: 410px; }
     .hero h1 {
@@ -227,7 +227,7 @@ button {
     max-width: 560px;
     padding: 1rem;
     padding-bottom: 1.75rem; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .wrap {
     max-width: 960px;
     margin: auto; }
@@ -264,4 +264,4 @@ button {
     height: 1100px; }
 
   button {
-    margin-bottom: -45px; } }
+    margin-bottom: -43px; } }
