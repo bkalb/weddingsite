@@ -12,6 +12,10 @@ $plum: #281624;
 
 /* GENERAL */
 
+* {
+	transition: all .5s ease;
+}
+
 html {
     font-size: 100%;
 }
@@ -23,13 +27,24 @@ body {
 
 p {
 	text-align: center;
-    margin-bottom: 1.1em;
+    margin-bottom: 1em;
     font-size: 1.125rem;
-    line-height: 1.5rem;
 }
 
 small {
 	font-size: 0.75em;
+}
+
+section, header {
+    padding: 1.25em;
+}
+
+ul {
+    text-align: center;
+    text-transform: uppercase;
+    li {
+        margin-bottom: .4em;
+    }
 }
 
 .hide-mobile {
@@ -40,22 +55,7 @@ small {
 	display: block;
 }
 
-ul {
-    text-align: center;
-    text-transform: uppercase;
-    li {
-        margin-bottom: 5px;
-    }
-    .hide-mobile {
-    	display: none;
-    }
-}
-
 /* SPECIFIC */
-
-section, header {
-    padding: 5%;
-}
 
 header, .when, .registry, .stay, .rsvp, button, {
     color: white;
@@ -82,7 +82,7 @@ header, .when, .registry, .stay, button, {
     background: url('/img/hero-cart.jpg') no-repeat;
     background-size: 275%;
     background-position: 47% 15%;
-    height: 300px;
+    height: 260px;
     // padding: 32.5% 0;
     .amp {
         font-family: $Vidaloka;
@@ -95,10 +95,9 @@ header, .when, .registry, .stay, button, {
     }
     .wrap {
     	position: absolute;
-		top: 50%;
-		// right: 50%;
-    	margin-top: -37px;
-    	// margin-right: -174px;
+		top: 60%;
+		right: 50%;
+    	margin-right: -152px;
     }
 }
 
@@ -111,7 +110,7 @@ h1, h3 {
 }
 
 h1 {
-    font-size: 2.75rem;
+    font-size: 2.4rem;
     font-weight: 400;
     color: white;
     letter-spacing: -2.5px;
@@ -169,6 +168,24 @@ button {
     border: 2px solid white;
 }
 
+.rsvp-hero {
+	background: url('/img/hero-wall.jpg') no-repeat;
+	background-size: 1500px;
+	background-position: top center;
+}
+
+@media screen and (min-width: 350px) {
+	.hero {
+		h1 {
+			font-size: 2.7rem;
+		}
+		height: 290px;
+		.wrap {
+	    	margin-right: -171px;
+		}
+	}
+}
+
 @media screen and (min-width: 450px) {
 	.hero {
 		h1 {
@@ -176,9 +193,6 @@ button {
 		}
 		height: 350px;
 		.wrap {
-			top: 50%;
-			right: 50%;
-	    	margin-top: -37px;
 	    	margin-right: -206px;
 		}
 	}
@@ -191,16 +205,19 @@ button {
 		}
 		height: 375px;
 		.wrap {
-	    	margin-top: -37px;
 	    	margin-right: -222px;
+		}
+	}
+
+	.when {
+		.wrap {
+			max-width: 600px;
+			margin: auto;
 		}
 	}
 }
 
 @media screen and (min-width: 650px) {
-	header, section {
-		padding: 3%;
-	}
 
 	.hero {
 		h1 {
@@ -208,8 +225,7 @@ button {
 		}
 		height: 410px;
 		.wrap {
-	    	margin-top: -37px;
-	    	margin-right: -174px;
+	    	margin-right: -285px;
 		}
 	}
 
@@ -235,6 +251,12 @@ button {
 	.directions {
 		width: 62%;
 	}
+
+	button {
+		max-width: 560px;
+		padding: 1rem;
+		padding-bottom: 1.75rem;
+	}
 }
 
 @media screen and (min-width: 800px) {
@@ -248,11 +270,16 @@ button {
 	}
 
 	nav {
+
 		ul {
 			a {
 				border: 0;
 			}
 		}
+	}
+
+	header {
+	    padding: 1%;
 	}
 
 	.show-mobile {
@@ -265,13 +292,26 @@ button {
 
 	.hero {
 		h1 {
-			font-size: 6rem;
+			font-size: 5rem;
 		}
 		height: 460px;
 		.wrap {
-	    	margin-top: -37px;
-	    	margin-right: -380px;
+	    	margin-right: -316.5px;
 		}
+	}
+
+	.rsvp {
+		background-color: rgba(0,0,0,0.5);
+		max-width: 840px;
+		margin: auto;
+	}
+	
+	.rsvp-hero {
+		height: 1100px;
+	}
+
+	button {
+		margin-bottom: -45px;
 	}
 }
 
