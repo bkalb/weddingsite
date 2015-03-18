@@ -50,7 +50,7 @@ table {
 
 /* GENERAL */
 * {
-  transition: all .5s ease; }
+  transition: height, width, background .5s ease; }
 
 html {
   font-size: 100%; }
@@ -88,7 +88,8 @@ header, .when, .registry, .stay, .rsvp, button {
   header a, .when a, .registry a, .stay a, .rsvp a, button a {
     color: white;
     text-decoration: none;
-    padding-bottom: 3px; }
+    padding-bottom: 3px;
+    border-bottom: 3px solid white; }
 
 header, .when, .registry, .stay, button {
   background: #FC584F; }
@@ -107,7 +108,7 @@ header, .when, .registry, .stay, button {
   text-shadow: 1px 1px 3px black;
   background: url("/img/hero-cart.jpg") no-repeat;
   background-size: 275%;
-  background-position: 47% 15%;
+  background-position: 52% -60px;
   height: 240px; }
   .hero .amp {
     font-family: "Vidaloka", serif; }
@@ -194,7 +195,12 @@ button {
     .hero h1 {
       font-size: 3.25rem; } }
 @media screen and (min-width: 480px) {
+  nav a {
+    border: 0; }
+
   .hero {
+    background-size: 150%;
+    background-position: 52% -30px;
     height: 375px; }
     .hero h1 {
       font-size: 3.75rem; }
@@ -208,7 +214,8 @@ button {
     margin: 0 .8em .4em; } }
 @media screen and (min-width: 600px) {
   .hero {
-    height: 410px; }
+    background-size: 125%;
+    height: 375px; }
     .hero h1 {
       font-size: 4.5rem; }
 
@@ -232,6 +239,15 @@ button {
     padding: 1rem;
     padding-bottom: 1.75rem; } }
 @media screen and (min-width: 768px) {
+  .hero {
+    height: 460px;
+    background-size: 100%;
+    background-position: 52% 12%; }
+    .hero h1 {
+      font-size: 5rem; }
+    .hero .wrap {
+      margin-top: 20%; }
+
   .wrap {
     max-width: 960px;
     margin: auto; }
@@ -252,13 +268,6 @@ button {
 
   .hide-mobile {
     display: block; }
-
-  .hero {
-    height: 460px; }
-    .hero h1 {
-      font-size: 5rem; }
-    .hero .wrap {
-      margin-top: 20%; }
 
   .rsvp {
     background-color: rgba(0, 0, 0, 0.5);
