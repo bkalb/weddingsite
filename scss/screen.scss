@@ -59,7 +59,7 @@ small {
 	font-size: 0.75em;
 }
 
-section, header {
+section, header, footer {
     padding: 1.5em;
 }
 
@@ -81,7 +81,7 @@ ul {
 
 // COLORING
 
-header, .when, .registry, .stay, .rsvp, button, {
+header, .when, .registry, .stay, .rsvp, input[type="submit"], footer {
     color: white;
     a {
         color: white;
@@ -91,11 +91,11 @@ header, .when, .registry, .stay, .rsvp, button, {
     }
 }
 
-header, .when, .registry, .stay, button, {
+header, .when, .registry, .stay, input[type="submit"] {
     background: $salmon;
 }
 
-.stay, .rsvp {
+.stay, .rsvp, footer {
     background: $plum;
 }
 
@@ -132,13 +132,14 @@ header, .when, .registry, .stay, button, {
 .get-there {
     background: $aqua;
     a {
-    	// color: $salmon;
-    	// text-decoration: none;
-    	// border-bottom: 2px solid $salmon;
-    	// &:active {
-    	// 	color: $salmon-click;
-    	// 	border-bottom: 2px solid $salmon-click;
-    	// }
+    	font-weight: 700;
+    	color: $salmon;
+    	text-decoration: none;
+    	border-bottom: 3px solid $salmon;
+    	&:active {
+    		color: $salmon-click;
+    		border-bottom: 3px solid $salmon-click;
+    	}
     }
 }
 
@@ -174,7 +175,7 @@ textarea {
     padding: .5rem;
 }
 
-button {
+input[type="submit"] {
     width: 75%;
     height: 2rem;
     padding: .5rem;
@@ -226,6 +227,7 @@ button {
 				transform: rotateY(0);
 			}
 		}
+	}
 
 	.get-there {
 		a {
@@ -245,16 +247,20 @@ button {
 			&:hover:before {
 				transform: rotateY(0);
 			}
+			&:active:before {
+				color: $salmon-click;
+				border-bottom: 3px solid $salmon-click;
+			}
 		}
 	}
 
 	.hero {
+		height: 375px;
 	    background-size: 150%;
 	    background-position: 52% -30px;
 		h1 {
 			font-size: 3.75rem;
 		}
-		height: 375px;
 	}
 
 	.when, .stay, .registry {
@@ -268,10 +274,6 @@ button {
 		display: inline-block;
 		margin: 0 .8em .4em;
 	}
-
-	.get-there {
-    	
-    }
 }
 
 @media screen and (min-width: 600px) {
@@ -288,7 +290,7 @@ button {
 		margin: auto;
 	}
 
-	button {
+	input[type="submit"] {
 		max-width: 560px;
 		padding: 1rem;
 		padding-bottom: 1.75rem;
@@ -315,7 +317,12 @@ button {
 
 	ul {
 		width: 100%;
+		li {
+			margin: 0 .8em 0;
+		}
 	}
+
+
 
 	nav {
 		a {
@@ -363,10 +370,7 @@ button {
 		height: 1100px;
 	}
 
-	button {
-		margin-bottom: -43px;
+	input[type="submit"] {
+		margin-bottom: -47px;
 	}
-}
-
-
 }
