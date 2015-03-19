@@ -7,7 +7,8 @@ $Josefin: 'Josefin Sans', sans-serif;
 $Vidaloka: 'Vidaloka', serif;
 
 $salmon: #FC584F;
-$aqua: #2DFFFE;
+$salmon-click: darken($salmon, 30%);
+$aqua: lighten(#2DFFFE, 10%);
 $plum: #281624;
 
 /* GENERAL */
@@ -16,13 +17,36 @@ $plum: #281624;
 	transition: height, width, background .5s ease;
 }
 
-html {
-    font-size: 100%;
-}
-
 body {
+    font-size: 100%;
     font-family: $Josefin;
     line-height: 1.5rem;
+}
+
+h1, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: -0.07em;
+}
+
+h2 {
+    font-family: $Vidaloka;
+    font-size: 1.5rem;
+    transform: skew(-15deg);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 p {
@@ -55,7 +79,7 @@ ul {
 	display: block;
 }
 
-/* SPECIFIC */
+// COLORING
 
 header, .when, .registry, .stay, .rsvp, button, {
     color: white;
@@ -71,15 +95,11 @@ header, .when, .registry, .stay, button, {
     background: $salmon;
 }
 
-.when, .registry {
-    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-	box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-}
-
 .stay, .rsvp {
     background: $plum;
 }
+
+// HERO SPLASH
 
 .hero {
 	position: relative;
@@ -106,34 +126,20 @@ header, .when, .registry, .stay, button, {
     }
 }
 
+
+// HOW DO I GET THERE
+
 .get-there {
     background: $aqua;
-}
-
-h1, h3 {
-    text-transform: uppercase;
-}
-
-h1 {
-    font-size: 2.4rem;
-    font-weight: 400;
-    color: white;
-    letter-spacing: -2.5px;
-}
-
-h2 {
-    font-family: $Vidaloka;
-    font-size: 1.5rem;
-    transform: skew(-15deg);
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: .5rem;
-}
-
-h3 {
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
+    a {
+    	// color: $salmon;
+    	// text-decoration: none;
+    	// border-bottom: 2px solid $salmon;
+    	// &:active {
+    	// 	color: $salmon-click;
+    	// 	border-bottom: 2px solid $salmon-click;
+    	// }
+    }
 }
 
 iframe {
@@ -144,7 +150,13 @@ iframe {
     border: 3px solid white;
 }
 
-// FORM
+// RSVP FORM
+
+.rsvp-splash {
+	background: url('/img/wall-splash.jpg') no-repeat;
+	background-size: 1500px;
+	background-position: top center;
+}
 
 fieldset {
     margin: 1rem 0;
@@ -174,11 +186,7 @@ button {
     border: 2px solid white;
 }
 
-.rsvp-hero {
-	background: url('/img/hero-wall.jpg') no-repeat;
-	background-size: 1500px;
-	background-position: top center;
-}
+// MEDIA QUERIES
 
 @media screen and (min-width: 350px) {
 	.hero {
@@ -199,11 +207,47 @@ button {
 }
 
 @media screen and (min-width: 480px) {
-	nav {
+	nav, .stay, .registry {
 		a {
-			border: 0;
+			border: 3px solid transparent;
+			transition: all 200ms ease;
+			position: relative;
+			&:before {
+				transition: all 200ms ease;
+				content: "";
+				position: absolute;
+				width: 100%;
+				border-bottom: 3px solid white;
+				left: 0;
+				bottom: 0;
+				transform: rotateY(90deg);
+			}
+			&:hover:before {
+				transform: rotateY(0);
+			}
+		}
+
+	.get-there {
+		a {
+			border: 3px solid transparent;
+			transition: all 200ms ease;
+			position: relative;
+			&:before {
+				transition: all 200ms ease;
+				content: "";
+				position: absolute;
+				width: 100%;
+				border-bottom: 3px solid $salmon;
+				left: 0;
+				bottom: 0;
+				transform: rotateY(90deg);
+			}
+			&:hover:before {
+				transform: rotateY(0);
+			}
 		}
 	}
+
 	.hero {
 	    background-size: 150%;
 	    background-position: 52% -30px;
@@ -224,6 +268,10 @@ button {
 		display: inline-block;
 		margin: 0 .8em .4em;
 	}
+
+	.get-there {
+    	
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -293,7 +341,7 @@ button {
 
 	.directions {
 		width: 62%;
-		padding: 1% 0 0 3%;
+		padding: .5% 0 0 3%;
 	}
 
 	.show-mobile {
@@ -308,12 +356,9 @@ button {
 		background-color: rgba(0,0,0,0.5);
 		max-width: 840px;
 		margin: auto;
-		// -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-		// -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
-		// box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.3);
 	}
 	
-	.rsvp-hero {
+	.rsvp-splash {
 		background-color: $plum;
 		height: 1100px;
 	}
@@ -324,3 +369,4 @@ button {
 }
 
 
+}

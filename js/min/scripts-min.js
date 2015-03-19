@@ -1,1 +1,1 @@
-$(function(){$("#responsive-headline").fitText()});
+$(function(){$("#responsive-headline").fitText(.85)});

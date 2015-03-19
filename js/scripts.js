@@ -1,3 +1,3 @@
 $(function() {
-	$("#responsive-headline").fitText();
+	$("#responsive-headline").fitText(0.85);
 });
