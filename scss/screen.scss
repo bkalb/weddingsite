@@ -37,6 +37,8 @@ h1 {
 h2 {
     font-family: $Vidaloka;
     font-size: 1.5rem;
+    -ms-transform: skew(-15deg);
+    -webkit-transform: skew(-15deg);
     transform: skew(-15deg);
     text-transform: uppercase;
     text-align: center;
@@ -109,10 +111,28 @@ header, .when, .registry, .stay, input[type="submit"] {
 	position: relative;
     text-align: center;
     text-shadow: 1px 1px 3px black;
-    background: url('/img/hero-cart.jpg') no-repeat;
+    background: url('/img/hero-cart.jpg');
+    background-repeat: no-repeat;
     background-size: 275%;
     background-position: 52% -60px;    
     height: 240px;
+    &:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		/* Safari 4-5, Chrome 1-9 */
+		/* Can't specify a percentage size? Laaaaaame. */
+		background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(255,255,255,0)), to(rgba(0,0,0,.5)));
+		/* Safari 5.1+, Chrome 10+ */
+		background: -webkit-radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,.5));
+		/* Firefox 3.6+ */
+		background: -moz-radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,.5));
+		/* IE 10 */
+		background: -ms-radial-gradient(circle, rgba(255,255,255,0), rgba(0,0,0,.5));
+    }
     .amp {
         font-family: $Vidaloka;
     }

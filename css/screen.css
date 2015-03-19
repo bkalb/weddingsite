@@ -43,14 +43,14 @@ table {
   border-spacing: 0; }
 
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: 0 0; }
 
 /* GENERAL */
 * {
-  transition: height, width, background .5s ease; }
+  -webkit-transition: height, width, background .5s ease;
+          transition: height, width, background .5s ease; }
 
 body {
   font-size: 100%;
@@ -69,6 +69,8 @@ h1 {
 h2 {
   font-family: "Vidaloka", serif;
   font-size: 1.5rem;
+  -ms-transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
   transform: skew(-15deg);
   text-transform: uppercase;
   text-align: center;
@@ -123,10 +125,25 @@ header, .when, .registry, .stay, input[type="submit"] {
   position: relative;
   text-align: center;
   text-shadow: 1px 1px 3px black;
-  background: url("/img/hero-cart.jpg") no-repeat;
+  background: url("/img/hero-cart.jpg");
+  background-repeat: no-repeat;
   background-size: 275%;
   background-position: 52% -60px;
   height: 240px; }
+  .hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background: -webkit-gradient(radial, center center, 0, center center, 460, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5)));
+    /* Safari 5.1+, Chrome 10+ */
+    background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+    /* Firefox 3.6+ */
+    /* IE 10 */ }
   .hero .amp {
     font-family: "Vidaloka", serif; }
   .hero .subhead {
@@ -187,9 +204,12 @@ input[type="submit"] {
   text-transform: uppercase;
   font-size: 1rem;
   border: 2px solid white;
-  transition: all .1s ease; }
+  -webkit-transition: all .1s ease;
+          transition: all .1s ease; }
   input[type="submit"]:active {
-    transform: scale(0.975); }
+    -webkit-transform: scale(0.975);
+        -ms-transform: scale(0.975);
+            transform: scale(0.975); }
 
 @media screen and (min-width: 350px) {
   .hero {
@@ -204,35 +224,43 @@ input[type="submit"] {
 @media screen and (min-width: 480px) {
   nav a, .stay a, .registry a {
     border: 3px solid transparent;
-    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
     position: relative; }
     nav a:before, .stay a:before, .registry a:before {
-      transition: all 200ms ease;
+      -webkit-transition: all 200ms ease;
+              transition: all 200ms ease;
       content: "";
       position: absolute;
       width: 100%;
       border-bottom: 3px solid white;
       left: 0;
       bottom: 0;
-      transform: rotateY(90deg); }
+      -webkit-transform: rotateY(90deg);
+              transform: rotateY(90deg); }
     nav a:hover:before, .stay a:hover:before, .registry a:hover:before {
-      transform: rotateY(0); }
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0); }
 
   .get-there a {
     border: 3px solid transparent;
-    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
     position: relative; }
     .get-there a:before {
-      transition: all 200ms ease;
+      -webkit-transition: all 200ms ease;
+              transition: all 200ms ease;
       content: "";
       position: absolute;
       width: 100%;
       border-bottom: 3px solid #FC584F;
       left: 0;
       bottom: 0;
-      transform: rotateY(90deg); }
+      -webkit-transform: rotateY(90deg);
+              transform: rotateY(90deg); }
     .get-there a:hover:before {
-      transform: rotateY(0); }
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0); }
     .get-there a:active:before {
       color: #af0c03;
       border-bottom: 3px solid #af0c03; }
