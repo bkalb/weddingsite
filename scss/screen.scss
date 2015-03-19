@@ -63,6 +63,10 @@ section, header, footer {
     padding: 1.5em;
 }
 
+footer {
+	text-align: center;
+}
+
 ul {
     text-align: center;
     text-transform: uppercase;
@@ -372,5 +376,12 @@ input[type="submit"] {
 
 	input[type="submit"] {
 		margin-bottom: -47px;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.rsvp-splash {
+		background-size: 100%;
+		background-position: 30%;
 	}
 }
