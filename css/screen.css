@@ -151,7 +151,7 @@ header, .when, .registry, .stay, input[type="submit"] {
       color: #af0c03;
       border-bottom: 3px solid #af0c03; }
 
-iframe {
+iframe, #map {
   display: block;
   margin: .5rem auto 1rem;
   height: 360px;
@@ -293,10 +293,10 @@ input[type="submit"] {
     display: table;
     width: 100%; }
 
-  .directions, iframe {
+  .directions, iframe, #map {
     display: inline-block; }
 
-  iframe {
+  iframe, #map {
     width: 37%;
     height: 575px;
     vertical-align: top; }

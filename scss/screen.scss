@@ -147,7 +147,7 @@ header, .when, .registry, .stay, input[type="submit"] {
     }
 }
 
-iframe {
+iframe, #map {
     display: block;
     margin: .5rem auto 1rem;
     height: 360px;
@@ -343,11 +343,11 @@ input[type="submit"] {
 	    width: 100%;
 	}
 
-	.directions, iframe {
+	.directions, iframe, #map {
 		display: inline-block;
 	}
 
-	iframe {
+	iframe, #map {
 		width: 37%;
 		height: 575px;
 		vertical-align: top;

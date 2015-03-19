@@ -8,6 +8,8 @@
     <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="/js/jquery.fittext.js"></script>
 	<script src="/js/scripts.js"></script>
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.6/mapbox.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -45,7 +47,9 @@
 	        <h2>How Do I Get There?</h2>
 	        <p class="show-mobile">Prairie Production is located at 1314 W. Randolph St., Chicago, IL 60607.</p>
 			
-			<iframe src="https://a.tiles.mapbox.com/v4/billykalb.lgh18kjg/attribution,zoompan,share.html?access_token=pk.eyJ1IjoiYmlsbHlrYWxiIiwiYSI6Il9iRUM2dTQifQ.PsAZIgKU5t-VuPoGLLdF9w"></iframe>
+			<!-- <iframe src="https://a.tiles.mapbox.com/v4/billykalb.lgh18kjg/attribution,geocoder,share.html?access_token=pk.eyJ1IjoiYmlsbHlrYWxiIiwiYSI6Il9iRUM2dTQifQ.PsAZIgKU5t-VuPoGLLdF9w"></iframe> -->
+
+			<div id="map"></div>
 
 			<div class="directions">
 				<p class="hide-mobile">Prairie Production is located at 1314 W. Randolph St., Chicago, IL 60607.</p>
@@ -104,10 +108,10 @@
 		                <input type="text" name="entry.253659929" value="" class="ss-q-short" id="entry_253659929" dir="auto" aria-label="First and last name " title="" placeholder="First and last name">
 		            </fieldset>
 		            <fieldset>
-		                <label>
+		                <div>
 		                    <input type="radio" name="entry.1532624250" value="Yes, I will be there!" id="group_1532624250_1" role="radio"> Yes, I will be there!
 		                    <input type="radio" name="entry.1532624250" value="No, I sadly cannot attend." id="group_1532624250_2" role="radio"> No, sadly I cannot attend.
-		                </label>
+		                </div>
 		            </fieldset>
 		            <fieldset>
 		                <textarea name="entry.641506421" id="entry_641506421" dir="auto" placeholder="Name(s) of anyone else attending with you"></textarea>
@@ -125,6 +129,23 @@
 	<footer>
 		Designed by Maddie. Coded by Billy. &copy; 2015.
 	</footer>
+
+	<script>
+		L.mapbox.accessToken = 'pk.eyJ1IjoiYmlsbHlrYWxiIiwiYSI6Il9iRUM2dTQifQ.PsAZIgKU5t-VuPoGLLdF9w';
+		var map = L.mapbox.map('map', 'billykalb.lgh18kjg', {
+		  zoomControl: false
+		}).setView([41.8846, -87.659498], 15);
+
+		// Disable drag and zoom handlers.
+		// map.dragging.disable();
+		map.scrollWheelZoom.disable();
+
+		// Center map on clicked marker
+		map.featureLayer.on('click', function(e) {
+        map.panTo(e.layer.getLatLng());
+    });
+
+	</script>
 
 </body>
 </html>
