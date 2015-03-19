@@ -22,6 +22,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/hero-cart-big.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6.54634e+06,
+		"inputAbbreviatedPath": "\/img\/hero-cart-big.jpg",
+		"outputAbbreviatedPath": "\/img\/hero-cart-big.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/hero-cart.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -33,6 +44,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/wall-splash-big.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 897352,
+		"inputAbbreviatedPath": "\/img\/wall-splash-big.jpg",
+		"outputAbbreviatedPath": "\/img\/wall-splash-big.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/wall-splash.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -40,6 +62,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/img\/wall-splash.jpg",
 		"outputAbbreviatedPath": "\/img\/wall-splash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/wall-with-drink.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 922342,
+		"inputAbbreviatedPath": "\/img\/wall-with-drink.png",
+		"outputAbbreviatedPath": "\/img\/wall-with-drink.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -145,66 +178,11 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
-		},
-	"\/Wedding Website Mockup\/bkfinalwireframemobile.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.36156e+06,
-		"inputAbbreviatedPath": "\/Wedding Website Mockup\/bkfinalwireframemobile.JPG",
-		"outputAbbreviatedPath": "\/Wedding Website Mockup\/bkfinalwireframemobile.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Wedding Website Mockup\/Links\/012.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6.54634e+06,
-		"inputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/012.jpg",
-		"outputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/012.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Wedding Website Mockup\/Links\/029.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6.72899e+06,
-		"inputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/029.jpg",
-		"outputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/029.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Wedding Website Mockup\/Links\/031.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4.02376e+06,
-		"inputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/031.jpg",
-		"outputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/031.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/Wedding Website Mockup\/Links\/Screen Shot 2015-02-15 at 3.28.00 PM.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.14601e+06,
-		"inputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/Screen Shot 2015-02-15 at 3.28.00 PM.png",
-		"outputAbbreviatedPath": "\/Wedding Website Mockup\/Links\/Screen Shot 2015-02-15 at 3.28.00 PM.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		}
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Billy Kalb",
+"lastSavedByUser": "Workshop",
 "manualImportLinks": {
 	},
 "projectAttributes": {
