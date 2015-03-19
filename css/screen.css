@@ -243,10 +243,11 @@ input[type="submit"] {
               transform: rotateY(0); }
 
   .get-there a {
-    border: 3px solid transparent;
     -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
     position: relative; }
+    .get-there a, .get-there a:active {
+      border: 0; }
     .get-there a:before {
       -webkit-transition: all 200ms ease;
               transition: all 200ms ease;

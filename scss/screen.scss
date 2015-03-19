@@ -260,7 +260,9 @@ input[type="submit"] {
 
 	.get-there {
 		a {
-			border: 3px solid transparent;
+			&, &:active {
+				border: 0;
+			}
 			transition: all 200ms ease;
 			position: relative;
 			&:before {
