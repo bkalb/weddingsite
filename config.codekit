@@ -33,13 +33,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/hero-wall.jpg": {
+	"\/img\/wall-splash.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/img\/hero-wall.jpg",
-		"outputAbbreviatedPath": "\/img\/hero-wall.jpg",
+		"inputAbbreviatedPath": "\/img\/wall-splash.jpg",
+		"outputAbbreviatedPath": "\/img\/wall-splash.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

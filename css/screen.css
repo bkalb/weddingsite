@@ -186,7 +186,10 @@ input[type="submit"] {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
-  border: 2px solid white; }
+  border: 2px solid white;
+  transition: all .1s ease; }
+  input[type="submit"]:active {
+    transform: scale(0.975); }
 
 @media screen and (min-width: 350px) {
   .hero {
@@ -307,6 +310,22 @@ input[type="submit"] {
 
   .hide-mobile {
     display: block; }
+
+  .stay {
+    height: 525px;
+    background: url("/img/wall-with-drink.png"), #281624;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    position: relative; }
+    .stay .wrap {
+      max-width: 960px;
+      position: relative; }
+    .stay .stay-block {
+      width: 315px;
+      margin-top: 120px; }
+      .stay .stay-block li {
+        display: block;
+        margin-bottom: .4em; }
 
   .rsvp {
     background-color: rgba(0, 0, 0, 0.5);
