@@ -66,6 +66,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/wall-with-drink.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63272,
+		"inputAbbreviatedPath": "\/img\/wall-with-drink.jpg",
+		"outputAbbreviatedPath": "\/img\/wall-with-drink.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/wall-with-drink.png": {
 		"fileType": 32768,
 		"ignore": 0,

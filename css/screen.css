@@ -125,6 +125,7 @@ header, .when, .registry, .stay, input[type="submit"] {
   position: relative;
   text-align: center;
   text-shadow: 1px 1px 3px black;
+  background-color: #FC584F;
   background: url("/img/hero-cart.jpg");
   background-repeat: no-repeat;
   background-size: 275%;
@@ -174,6 +175,9 @@ iframe, #map {
   height: 360px;
   width: 100%;
   border: 3px solid white; }
+
+.registry p, .get-there p {
+  text-align: left; }
 
 .rsvp-splash {
   background: url("/img/wall-splash.jpg") no-repeat;
@@ -342,7 +346,7 @@ input[type="submit"] {
 
   .stay {
     height: 525px;
-    background: url("/img/wall-with-drink.png"), #281624;
+    background: url("/img/wall-with-drink.jpg"), #281624;
     background-repeat: no-repeat;
     background-position: 60%;
     position: relative; }

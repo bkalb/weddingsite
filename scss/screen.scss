@@ -10,6 +10,7 @@ $salmon: #FC584F;
 $salmon-click: darken($salmon, 30%);
 $aqua: lighten(#2DFFFE, 10%);
 $plum: #281624;
+$plum-gradient: rgba(23, 12, 21, 1);
 
 /* GENERAL */
 
@@ -111,6 +112,7 @@ header, .when, .registry, .stay, input[type="submit"] {
 	position: relative;
     text-align: center;
     text-shadow: 1px 1px 3px black;
+    background-color: $salmon;
     background: url('/img/hero-cart.jpg');
     background-repeat: no-repeat;
     background-size: 275%;
@@ -173,6 +175,12 @@ iframe, #map {
     height: 360px;
     width: 100%;
     border: 3px solid white;
+}
+
+.registry, .get-there {
+	p {
+		text-align: left;
+	}
 }
 
 // RSVP FORM
@@ -390,7 +398,7 @@ input[type="submit"] {
 
 	.stay {
 		height: 525px;
-		background: url('/img/wall-with-drink.png'), $plum;
+		background: url('/img/wall-with-drink.jpg'), $plum;
 		background-repeat: no-repeat;
 		background-position: 60%;
 		position: relative;
