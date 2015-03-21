@@ -125,8 +125,7 @@ header, .when, .registry, .stay, input[type="submit"] {
   position: relative;
   text-align: center;
   text-shadow: 1px 1px 3px black;
-  background-color: #FC584F;
-  background: url("/img/hero-cart.jpg");
+  background: url("/img/hero-cart.jpg"), #FC584F;
   background-repeat: no-repeat;
   background-size: 275%;
   background-position: 52% -60px;
@@ -160,12 +159,12 @@ header, .when, .registry, .stay, input[type="submit"] {
 
 .get-there {
   background: #60fffe; }
-  .get-there a {
+  .get-there p a {
     font-weight: 700;
     color: #FC584F;
     text-decoration: none;
     border-bottom: 3px solid #FC584F; }
-    .get-there a:active {
+    .get-there p a:active {
       color: #af0c03;
       border-bottom: 3px solid #af0c03; }
 
@@ -239,20 +238,20 @@ input[type="submit"] {
       width: 100%;
       border-bottom: 3px solid white;
       left: 0;
-      bottom: 0;
+      bottom: -3px;
       -webkit-transform: rotateY(90deg);
               transform: rotateY(90deg); }
     nav a:hover:before, .stay a:hover:before, .registry a:hover:before {
       -webkit-transform: rotateY(0);
               transform: rotateY(0); }
 
-  .get-there a {
+  .get-there p a {
     -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
     position: relative; }
-    .get-there a, .get-there a:active {
+    .get-there p a, .get-there p a:active {
       border: 0; }
-    .get-there a:before {
+    .get-there p a:before {
       -webkit-transition: all 200ms ease;
               transition: all 200ms ease;
       content: "";
@@ -260,13 +259,13 @@ input[type="submit"] {
       width: 100%;
       border-bottom: 3px solid #FC584F;
       left: 0;
-      bottom: 0;
+      bottom: -3px;
       -webkit-transform: rotateY(90deg);
               transform: rotateY(90deg); }
-    .get-there a:hover:before {
+    .get-there p a:hover:before {
       -webkit-transform: rotateY(0);
               transform: rotateY(0); }
-    .get-there a:active:before {
+    .get-there p a:active:before {
       color: #af0c03;
       border-bottom: 3px solid #af0c03; }
 

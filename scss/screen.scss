@@ -112,8 +112,8 @@ header, .when, .registry, .stay, input[type="submit"] {
 	position: relative;
     text-align: center;
     text-shadow: 1px 1px 3px black;
-    background-color: $salmon;
-    background: url('/img/hero-cart.jpg');
+    // background-color: $salmon;
+    background: url('/img/hero-cart.jpg'), $salmon;
     background-repeat: no-repeat;
     background-size: 275%;
     background-position: 52% -60px;    
@@ -157,14 +157,16 @@ header, .when, .registry, .stay, input[type="submit"] {
 
 .get-there {
     background: $aqua;
-    a {
-    	font-weight: 700;
-    	color: $salmon;
-    	text-decoration: none;
-    	border-bottom: 3px solid $salmon;
-    	&:active {
-    		color: $salmon-click;
-    		border-bottom: 3px solid $salmon-click;
+    p {
+    	a {
+	    	font-weight: 700;
+	    	color: $salmon;
+	    	text-decoration: none;
+	    	border-bottom: 3px solid $salmon;
+	    	&:active {
+	    		color: $salmon-click;
+	    		border-bottom: 3px solid $salmon-click;
+	    	}
     	}
     }
 }
@@ -257,7 +259,7 @@ input[type="submit"] {
 				width: 100%;
 				border-bottom: 3px solid white;
 				left: 0;
-				bottom: 0;
+				bottom: -3px;
 				transform: rotateY(90deg);
 			}
 			&:hover:before {
@@ -267,28 +269,30 @@ input[type="submit"] {
 	}
 
 	.get-there {
-		a {
-			&, &:active {
-				border: 0;
-			}
-			transition: all 200ms ease;
-			position: relative;
-			&:before {
+		p {
+			a {
+				&, &:active {
+					border: 0;
+				}
 				transition: all 200ms ease;
-				content: "";
-				position: absolute;
-				width: 100%;
-				border-bottom: 3px solid $salmon;
-				left: 0;
-				bottom: 0;
-				transform: rotateY(90deg);
-			}
-			&:hover:before {
-				transform: rotateY(0);
-			}
-			&:active:before {
-				color: $salmon-click;
-				border-bottom: 3px solid $salmon-click;
+				position: relative;
+				&:before {
+					transition: all 200ms ease;
+					content: "";
+					position: absolute;
+					width: 100%;
+					border-bottom: 3px solid $salmon;
+					left: 0;
+					bottom: -3px;
+					transform: rotateY(90deg);
+				}
+				&:hover:before {
+					transform: rotateY(0);
+				}
+				&:active:before {
+					color: $salmon-click;
+					border-bottom: 3px solid $salmon-click;
+				}
 			}
 		}
 	}
